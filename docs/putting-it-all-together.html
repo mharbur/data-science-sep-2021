@@ -24,7 +24,7 @@
 <meta name="author" content="Marin L. Harbur" />
 
 
-<meta name="date" content="2021-09-24" />
+<meta name="date" content="2021-10-06" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -156,7 +156,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">A Minimal Book Example</a></li>
+<li><a href="./">Data Science for Agricultural Professionals</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
@@ -2121,7 +2121,7 @@ POINT (-92.79145 43.9902)
 <p><em>We want to predict the yield for a particular hybrid across 676 midwestern counties, based on over 300 observations of that hybrid.</em></p>
 <p>We start by reading in the shapefile with our hybrid data.</p>
 <pre><code>## Reading layer `hybrid_data&#39; from data source 
-##   `C:\Users\559069\Documents\data-science-for-agricultural-professionals-sept-2021\data-unit-14\hybrid_data.shp&#39; 
+##   `C:\Users\559069\Documents\data-science-sep-2021\data-unit-14\hybrid_data.shp&#39; 
 ##   using driver `ESRI Shapefile&#39;
 ## Simple feature collection with 4578 features and 4 fields
 ## Geometry type: POINT
@@ -2173,7 +2173,7 @@ POINT (-92.79145 43.9902)
 <p>Similarly, lets load in the county data. Like the hybrid dataset, it is in long form, so lets again spread or pivot it to the long form so that the attributes each have their own column.</p>
 <div class="sourceCode" id="cb613"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb613-1"><a href="putting-it-all-together.html#cb613-1" aria-hidden="true" tabindex="-1"></a>county_climates <span class="ot">=</span> <span class="fu">st_read</span>(<span class="st">&quot;data-unit-14/county_climates.shp&quot;</span>)</span></code></pre></div>
 <pre><code>## Reading layer `county_climates&#39; from data source 
-##   `C:\Users\559069\Documents\data-science-for-agricultural-professionals-sept-2021\data-unit-14\county_climates.shp&#39; 
+##   `C:\Users\559069\Documents\data-science-sep-2021\data-unit-14\county_climates.shp&#39; 
 ##   using driver `ESRI Shapefile&#39;
 ## Simple feature collection with 8788 features and 8 fields
 ## Geometry type: MULTIPOLYGON
